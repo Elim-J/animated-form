@@ -1,3 +1,4 @@
+import "./styles/App.css"
 import Form from "./components/Form"
 import Header from "./components/Header"
 
