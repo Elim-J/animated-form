@@ -12,7 +12,6 @@ export default function Form(){
         languages: ""
     })
 
-    console.log(formData)
 
     function updateForm(event){
         
@@ -26,9 +25,19 @@ export default function Form(){
         })
     }
 
+    function handleSubmit(event){
+        event.preventDefault() //this function prevents the page from refreshing and starting back at default values
+        
+        //if we had a function to submit to API function, we could do: submitToAPI(formData)
+        //because our form is already updated
+
+        //I'm just logging it to the console so that we can see our state object
+        console.log(formData)
+    }
+
     return (
         <div className="form--container">
-            <form>
+            <form onSubmit={handleSubmit}>
                 <input 
                     type="text" 
                     placeholder="First Name"
@@ -118,6 +127,29 @@ export default function Form(){
 
                     <br />
                 </fieldset>
+
+                <label htmlFor="favLanguage">What's your favorite Programming Language?</label>
+                <br />
+                <select 
+                    value={formData.languages} 
+                    id="favLanguage"
+                    onChange={updateForm}
+                    name="languages"    
+                >
+                    <option value="">--Choose Option--</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="Machine Language">Machine Language</option>
+                    <option value="Only Human Languages">Only Human Languages</option>
+                    <option value="What's a language?">What's a language?</option>
+                </select>
+
+                <br />
+                <br />
+                <button>Submit</button>
             </form>
         </div>
     )
