@@ -9,7 +9,8 @@ export default function Form(){
         userName: "",
         comments: "",
         knowReact: false,
-        languages: ""
+        languages: "",
+        favoriteLanguage: ""
     })
 
 
@@ -131,10 +132,10 @@ export default function Form(){
                 <label htmlFor="favLanguage">What's your favorite Programming Language?</label>
                 <br />
                 <select 
-                    value={formData.languages} 
+                    value={formData.favoriteLanguage} 
                     id="favLanguage"
                     onChange={updateForm}
-                    name="languages"    
+                    name="favoriteLanguage"    
                 >
                     <option value="">--Choose Option--</option>
                     <option value="Javascript">Javascript</option>
