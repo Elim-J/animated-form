@@ -1,0 +1,34 @@
+
+nav {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.toggler {
+    align-items: center;
+    display: flex;
+    justify-content: right;
+}
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    border-radius: 2rem;
+    background-color:black;
+    margin-inline: 7px;
+    display:flex;
+    /* justify-content moves circle from flex-start to flex-end */
+    justify-content: flex-start;
+}
+
+nav.dark .toggler--slider {
+    justify-content: flex-end;
+}
+
+.toggler--slider--circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+}
+
