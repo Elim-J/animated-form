@@ -17,7 +17,9 @@ function App() {
         darkMode={darkMode}
         handleMode={chooseMode}
       />
-      <Form />
+      <Form 
+        darkMode={darkMode}
+      />
     </div>
   );
 }
