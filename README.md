@@ -1,7 +1,6 @@
-# animated-form
-Basic form with an image that tilts as the cursor moves about the page and is clickable to toggle between different color schemes. This is my first attempt at creating a form!
-    
-Finished adding basic elements to form, added minimal styling, have not added anything to header body yet.
+# form
+Basic form that is clickable to toggle between different color schemes. This is my first attempt at creating a form!
+
 Site: https://basic-form-111.netlify.app/
     
     
