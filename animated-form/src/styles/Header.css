@@ -1,7 +1,13 @@
 
 nav {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-    padding: 20px;
+    padding: 40px;
+    background-color: white;
+}
+
+nav.dark{
+    background-color: #314053;
+    color: white;
 }
 
 .toggler {
@@ -12,23 +18,30 @@ nav {
 
 .toggler--slider {
     width: 25px;
-    height: 13px;
+    height: 15px;
     border-radius: 2rem;
     background-color:black;
     margin-inline: 7px;
     display:flex;
-    /* justify-content moves circle from flex-start to flex-end */
     justify-content: flex-start;
 }
 
 nav.dark .toggler--slider {
     justify-content: flex-end;
+    background-color:rgb(230, 230, 230);
 }
 
 .toggler--slider--circle {
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: white;
 }
 
+nav.dark .toggler--slider--circle {
+    background-color: #0c1e35;
+}
+
+p {
+    font-size: 20px;
+}
