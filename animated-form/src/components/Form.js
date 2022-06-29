@@ -1,5 +1,7 @@
 import React from "react"
 import "../styles/Form.css"
+import dataImage from "../images/data-analysis.png"
+
 export default function Form(props){
 
     const [formData, setFormData] = React.useState({
@@ -36,8 +38,10 @@ export default function Form(props){
         console.log(formData)
     }
 
+
     return (
         <div className={props.darkMode ? "dark" : ""}>
+                <img src={dataImage} className="object" alt=""/>
             <div className="form--container">
                 <form onSubmit={handleSubmit}>
                     <div className="first--last">
